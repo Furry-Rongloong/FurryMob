@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兽设登记</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>兽设登记</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="搜索兽设名或抖音名">
+        <button id="search-button">搜索</button>
+    </div>
+    <form id="beast-form">
+        <div class="form-group">
+            <label for="beast-name">兽设名：</label>
+            <input type="text" id="beast-name" required>
+        </div>
+        <div class="form-group">
+            <label for="douyin-name">抖音名：</label>
+            <input type="text" id="douyin-name" required>
+        </div>
+        <div class="form-group">
+            <label for="douyin-id">抖音号：</label>
+            <input type="text" id="douyin-id" required>
+        </div>
+        <div class="form-group">
+            <label for="beast-image">图片：</label>
+            <input type="file" id="beast-image" accept="image/*">
+        </div>
+        <button type="submit">登记</button>
+    </form>
+    <h2>已登记兽设</h2>
+    <div id="beast-records"></div>
+    <script src="script.js"></script>
+</body>
+</html>
